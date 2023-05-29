@@ -72,4 +72,25 @@ In this updated script, the following steps are performed:
 This script allows you to check for Node.js installation, install Node.js if needed, update the system, and display a concluding message at the end.
 
 
+# patch-management-2.py 
+
+This script performs system upgrade, auto-removal of old packages, and cache cleaning.
+
+In this script, the following steps are performed:
+
+1. The `upgrade_system()` function uses `os.system()` to run the commands `apt-get update` and `apt-get upgrade -y`, which upgrade the system and install the available security patches.
+
+2. The `auto_remove()` function uses `os.system()` to run the command `apt-get autoremove -y`, which removes old packages that are no longer needed.
+
+3. The `auto_clean()` function uses `os.system()` to run the command `apt-get autoclean -y`, which cleans the cache and removes old package files.
+
+4. The script calls each function sequentially to perform the system upgrade, auto-removal, and cache cleaning.
+
+5. After running the code blocks, a message is printed on the screen to indicate that the system upgrade, auto-removal, and cache cleaning processes have been completed.
+
+This script automates the process of upgrading the system, removing old packages, and cleaning the cache, providing a convenient way to maintain the system's cleanliness and security.
+
+
+
+
 
