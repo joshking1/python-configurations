@@ -52,5 +52,24 @@ In this updated script, the following steps are performed:
 
 This script allows you to check for Git installation, install Git if needed, and display a concluding message at the end.
 
+# Nodejs.py
+
+This script checks whether Node.js is installed, installs it if needed, and displays a final message.
+
+
+In this updated script, the following steps are performed:
+
+1. The `does_nodejs_exist()` function checks if Node.js is installed by running the command `command -v node &>/dev/null`. It prints a message indicating whether Node.js is installed or not.
+
+2. The `update_the_system()` function updates the system by running `apt update` and `apt upgrade -y` commands.
+
+3. The `install_nodejs()` function installs Node.js using the `apt` package manager by running `apt install nodejs -y` command. It also displays the version of Node.js installed by running `node -v` command.
+
+4. The `final_message()` function simply prints the message "===============END================".
+
+5. The script calls the `final_message()` function to display the final message, then proceeds to install Node.js if it is not already installed by calling the `install_nodejs()` function. The system is updated first by calling the `update_the_system()` function. Appropriate messages are printed during the process.
+
+This script allows you to check for Node.js installation, install Node.js if needed, update the system, and display a concluding message at the end.
+
 
 
