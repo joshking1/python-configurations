@@ -90,6 +90,24 @@ In this script, the following steps are performed:
 
 This script automates the process of upgrading the system, removing old packages, and cleaning the cache, providing a convenient way to maintain the system's cleanliness and security.
 
+# patch-management.py
+
+The provided script is a patch management script that uses the subprocess module to perform system upgrades, auto-removal of old plugins, and cache cleaning.
+
+In this script, the subprocess module is used to run system commands in a more secure and flexible way.
+
+The upgrade_system() function updates the package list by running apt update and upgrades the system by running apt upgrade -y.
+
+The auto_remove() function removes unnecessary packages using apt autoremove -y.
+
+The auto_clean() function cleans the package cache using apt autoclean -y.
+
+After running the code blocks, a message is printed on the screen to indicate that the system has been upgraded.
+
+This script provides a more robust and recommended approach to patch management by utilizing the subprocess module for command execution.
+
+
+
 
 
 
