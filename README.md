@@ -35,4 +35,22 @@ In this script, the following steps are performed:
 
 This script allows you to check for Docker installation, install Docker if needed, and start and enable the Docker service if it is already installed.
 
+# git.py 
+
+
+In this updated script, the following steps are performed:
+
+1. The `is_git_installed()` function checks if Git is installed by running the command `command -v git &>/dev/null`. It prints a message indicating whether Git is installed or not.
+
+2. The `installing_git()` function installs Git using the `apt` package manager by running the command `apt install git -y`.
+
+3. The `message_on_screen()` function simply prints the message "=====END=====".
+
+4. The script calls the `is_git_installed()` function to check if Git is installed. If it is not installed, it proceeds to install Git by calling the `installing_git()` function. The appropriate messages are printed during the process.
+
+5. Finally, the script calls the `message_on_screen()` function to display the "=====END=====" message.
+
+This script allows you to check for Git installation, install Git if needed, and display a concluding message at the end.
+
+
 
